@@ -1,0 +1,192 @@
+  
+  .tasks__list{
+    display:inline-block;
+  }
+  .tasks__item {
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  cursor: move;
+  background-color: white;
+
+  transition: background-color 0.5s;
+}
+#tasks__list2, #tasks__list3, #tasks__list4 {
+    border: thick double #32a1ce;
+    min-height: 299px;
+    width: 90%;
+    max-width: 90%;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+  }
+  #tasks__list2 li, #tasks__list3 li, #tasks__list4 li {
+    max-width: 90%;
+    margin: 0 5px 5px 5px;
+    padding: 10px;
+    word-break: break-all;
+  }
+  .scroll-table  {
+  display:inline-block;
+}
+h1{
+  text-align: center;
+}
+.lists_div{
+  max-width: 99%;
+}
+.forbuttonandkotl{
+  display:inline-block;
+}
+.forbuttonandkotl1{
+  display:inline-block;
+}
+.forbuttonandkotl2{
+  display:inline-block;
+}
+/* Стиль для всего документа */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стиль для кнопки "Открыть меню для построения графика" */
+.popup-open {
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стиль для всплывающего окна */
+.popup-fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+  background: #fff;
+  width: 70%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-close {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стиль для таблицы задач */
+.scroll-table {
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.scroll-table-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-table-body ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Стиль для осей и выпадающих списков */
+.scroll-table h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.scroll-table-body select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Стиль для кнопок "Добавить Ось" */
+.scroll-table-body button {
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стиль для радиокнопок и кнопки "Построить график" */
+.timeparam input[type="radio"] {
+  margin: 0 5px;
+}
+
+.timeforcheckbutt1 {
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+#myChart {
+  width: 100vw; /* 100% ширины вьюпорта (viewport width) */
+  height: 100vh; /* 100% высоты вьюпорта (viewport height) */
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Может понадобиться, чтобы избежать полос прокрутки */
+}
+/* Стиль для кнопки "Открыть меню для построения графика" */
+.popup-open {
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; /* Добавляем округление краев */
+}
+
+/* Стиль для кнопки "Закрыть" во всплывающем окне */
+.popup-close {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; /* Добавляем округление краев */
+}
+.knopka{
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; /* Добавляем округление краев */
+}
+
+
