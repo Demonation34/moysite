@@ -14,21 +14,18 @@
   
 }
 #tasks__list2, #tasks__list3, #tasks__list4,#tasks__list5 {
+
     border: thick double #32a1ce;
-    min-height: 150px;
-    width: 90%;
-    max-width: 90%;
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 0 0 0;
-    float: left;
-    margin-right: 10px;
+    display: inline-block; /* или inline-flex */
+  max-width: 90%;
+  min-height: 100px;
+  min-width: 100px;
   }
   #tasks__list2 li, #tasks__list3 li, #tasks__list4 li,#tasks__list5 li {
-    max-width: 90%;
+
     margin: 0 5px 5px 5px;
-    padding: 10px;
-    word-break: break-all;
+  padding: 10px;
+  word-break: break-all;
   }
   .scroll-table  {
   display:inline-block;
@@ -100,10 +97,7 @@ body {
 }
 
 /* Стиль для таблицы задач */
-.scroll-table {
-  overflow-x: auto;
-  margin: 10px 0;
-}
+
 
 .scroll-table-body ul {
   list-style: none;
@@ -197,6 +191,7 @@ html, body {
   flex-direction: row; /* Расположение элементов по горизонтали */
   align-items: center; /* Выравнивание по центру по вертикали */
   /* Другие нужные стили */
+  overflow: auto;
 }
 .ui-sortable-handle{
     height: 2em;
